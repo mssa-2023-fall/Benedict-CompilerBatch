@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnImmutable", "LearnImmutable.csproj", "{2C3626A7-B389-4824-AEA8-599358FBFE5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnImmutableTest", "..\LearnImmutableTest\LearnImmutableTest.csproj", "{D479F1C7-B5F1-49A8-9C9F-B8E461A88773}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2C3626A7-B389-4824-AEA8-599358FBFE5B} = {2C3626A7-B389-4824-AEA8-599358FBFE5B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C3626A7-B389-4824-AEA8-599358FBFE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3626A7-B389-4824-AEA8-599358FBFE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3626A7-B389-4824-AEA8-599358FBFE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3626A7-B389-4824-AEA8-599358FBFE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D479F1C7-B5F1-49A8-9C9F-B8E461A88773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D479F1C7-B5F1-49A8-9C9F-B8E461A88773}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D479F1C7-B5F1-49A8-9C9F-B8E461A88773}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D479F1C7-B5F1-49A8-9C9F-B8E461A88773}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BE85397-C4CF-4D7F-B302-9C0888F6C372}
+	EndGlobalSection
+EndGlobal

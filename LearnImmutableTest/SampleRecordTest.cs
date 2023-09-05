@@ -10,7 +10,7 @@ namespace LearnImmutableTest
             SampleRecord record2 = new SampleRecord(ParamString: "Test", ParamInt: 1, ParamDate: new DateTime(2023, 9, 5));
             
             //assert
-            Asert.AreEqual(record1, record2);
+            Assert.AreEqual(record1, record2);
             Assert.AreNotSame(record1, record2);
         }
         public void TestRecordInEqualityWithPositionParameters()
@@ -19,7 +19,7 @@ namespace LearnImmutableTest
             SampleRecord record2 = new SampleRecord(ParamString: "Test", ParamInt: 2, ParamDate: new DateTime(2023, 9, 5));
 
             //assert
-            Asert.AreEqual(record1, record2);
+            Assert.AreEqual(record1, record2);
             Assert.AreNotSame(record1, record2);
         }
         public void TestRecordTypeSamenessWithPositionParameters()
@@ -28,7 +28,7 @@ namespace LearnImmutableTest
             SampleRecord record2 = record1;
 
             //assert
-            Asert.AreEqual(record1, record2);
+            Assert.AreEqual(record1, record2);
             Assert.AreNotSame(record1, record2);
         }
     }
