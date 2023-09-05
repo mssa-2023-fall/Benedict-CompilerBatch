@@ -3,6 +3,14 @@ namespace LearnImmutableTest
     [TestClass]
     public class SampleRecordTest
     {
+
+        SampleRecord record1 = null;
+        [TestInitialize]
+        public void TestSetup()
+        {
+            record1 = new SampleRecord(ParamString: "Test", ParamInt: 1, ParamDate: new DateTime(2023, 9, 5));
+        }
+
         [TestMethod]
         public void TestRecordTypeEqualityWithPositionParameters()
         {//arrange
@@ -77,6 +85,20 @@ namespace LearnImmutableTest
             Assert.AreEqual(outInt, 1);
             Assert.AreEqual(outDateTime, new DateTime(2023, 9, 5));
 
+        }
+        [TestMethod]
+        public void TestRecordTypeTestNonDestructiveMutation()
+        {
+            //Arrange
+
+            //Act
+            SampleRecord record2 = record1 with { ParamInt = 2 };
+            //Assert
+            Assert.AreNotEqual(record1, record2);
+            Assert.AreNotSame(record1, record2);
+            Assert.AreEqual(record2.ParamInt, 2);
+            Assert.AreEqual(record1.ParamInt, 1);
+            Assert.AreEqual(record2.ParamString, "Test");
         }
     }
 }
